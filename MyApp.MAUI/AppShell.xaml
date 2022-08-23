@@ -7,9 +7,26 @@
     xmlns:view="clr-namespace:MyApp.MAUI.Views"
     Shell.FlyoutBehavior="Disabled">
 
-    <ShellContent
-        Title="Home"
-        ContentTemplate="{DataTemplate view:HomePage}"
-        Route="MainPage" />
-
+    <FlyoutItem FlyoutDisplayOptions="AsMultipleItems">
+        <ShellContent Title="Bài viết"
+                      Icon="rss.png"
+                      ContentTemplate="{DataTemplate view:BlogPage}"
+                      Route="MainPage" />
+        <ShellContent Title="Tiện ích"
+                      Icon="dashboard.png"
+                      ContentTemplate="{DataTemplate view:HomePage}"
+                      Route="MainPage" />
+        <ShellContent Title="L.Vạn niên"
+                      Icon="calendar.png"
+                      ContentTemplate="{DataTemplate view:CalendarPage}"
+                      Route="MainPage" />
+        <ShellContent Title="Cộng đồng"
+                      Icon="chat.png"
+                      ContentTemplate="{DataTemplate view:ForumPage}"
+                      Route="MainPage" />
+        <ShellContent Title="Tài khoản"
+                      Icon="user.png"
+                      ContentTemplate="{DataTemplate view:UserPage}"
+                      Route="MainPage" />
+    </FlyoutItem>
 </Shell>

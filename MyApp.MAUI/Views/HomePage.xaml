@@ -2,11 +2,74 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MyApp.MAUI.Views.HomePage"
-             Title="HomePage">
+             Title="Trang chủ">
+    <NavigationPage.TitleView>
+        <HorizontalStackLayout HorizontalOptions="CenterAndExpand"
+                               VerticalOptions="CenterAndExpand">
+            <Label Text="Trang chủ"
+                   FontSize="28"
+                   TextColor="White"
+                   HorizontalOptions="CenterAndExpand"
+                   VerticalOptions="CenterAndExpand"
+                   Margin="0"
+                   Padding="0"
+                   FontFamily="Proxima Nova"/>
+        </HorizontalStackLayout>
+    </NavigationPage.TitleView>
     <VerticalStackLayout>
-        <Label 
-            Text="Tôi tên là Dương Nguyễn Tấn Hòa!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
+        <FlexLayout Direction="Row"
+                    HorizontalOptions="CenterAndExpand"
+                    AlignItems="Start"
+                    Wrap="Wrap"
+                    JustifyContent="Start">
+            <Frame BorderColor="Navy"
+                   HeightRequest="130"
+                   WidthRequest="130"
+                   Margin="2"
+                   CornerRadius="8">
+                <StackLayout>
+                    <Label Text="Mai Hoa Dịch Số"
+                               FontSize="14"></Label>
+                    <Label Text="Giả lập phương pháp bốc quẻ theo mai hoa dịch số"
+                               FontSize="12"></Label>
+                </StackLayout>
+            </Frame>
+            <Frame BorderColor="Navy"
+                   HeightRequest="130"
+                   WidthRequest="130"
+                   Margin="2"
+                   CornerRadius="8">
+                <StackLayout>
+                    <Label Text="Phong thủy sim"
+                                   FontSize="14"></Label>
+                    <Label Text="Xem phong thủy số điện thoại bạn dùng như thế nào?"
+                                   FontSize="12"></Label>
+                </StackLayout>
+            </Frame>
+            <Frame BorderColor="Navy"
+                   HeightRequest="130"
+                   WidthRequest="130"
+                   Margin="2"
+                   CornerRadius="8">
+                <StackLayout>
+                    <Label Text="Phong cách"
+                            FontSize="14"></Label>
+                    <Label Text="Xem phong cách định hình chìa khóa thành công"
+                            FontSize="12"></Label>
+                </StackLayout>
+            </Frame>
+            <Frame BorderColor="Navy"
+                   HeightRequest="130"
+                   WidthRequest="130"
+                   Margin="2"
+                   CornerRadius="8">
+                <StackLayout>
+                    <Label Text="Phong cách"
+                            FontSize="14"></Label>
+                    <Label Text="Xem phong cách định hình chìa khóa thành công"
+                            FontSize="12"></Label>
+                </StackLayout>
+            </Frame>
+        </FlexLayout>
     </VerticalStackLayout>
 </ContentPage>
